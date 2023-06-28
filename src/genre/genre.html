@@ -1,0 +1,41 @@
+<!-- genre.html -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Жанры</title>
+
+  <link rel="stylesheet" type="text/css" href="genre.css">
+</head>
+
+<body>
+  <li><a href="/">Начальная страница</a></li>
+  <h1>Жанры</h1>
+
+
+  <table id="genreTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Имя</th>
+        <th>Действия</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <form id="genreForm">
+    <label for="genreNameInput">Название:</label>
+    <input type="text" id="genreNameInput"><br>
+    <button type="button" id="updateGenreBtn" style="display: none;" onclick="update()">Изменить</button>
+    <button type="button" id="cancelGenreBtn" style="display: none;" onclick="cancel()">Отменить</button>
+    <button type="submit" id="submitGenre">Добавить жанр</button>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/vendor/lovefield/dist/lovefield.min.js"></script>
+  <script src="genre.js"></script>
+</body>
+
+</html>

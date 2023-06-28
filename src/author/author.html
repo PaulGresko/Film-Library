@@ -1,0 +1,47 @@
+<!-- genre.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Авторы</title>
+  <link rel="stylesheet" type="text/css" href="author.css">
+</head>
+<body>
+  
+  <li><a href="/">Начальная страница</a></li>
+  <h1>Авторы</h1>
+
+
+
+  <table id="authorTable">
+    <thead>
+      <tr>
+        <th>Имя</th>
+        <th>Дата рождения</th>
+        <th>Родной город</th>
+        <th>Действие</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <form id="authorForm">
+    <label for="nameInput" id = "nameInputLabel">Name:</label>
+    <input type="text" id="nameInput" required>
+    <br>
+    <label for="birthdayInput">Birthday:</label>
+    <input type="date" id="birthdayInput" required>
+    <br>
+    <label for="birthplaceInput">Birthplace:</label>
+    <input type="text" id="birthplaceInput" required>
+    <br>
+    <button type="button" id="updateAuthorBtn" style="display: none;" onclick="update()">Изменить</button>
+    <button type="button" id="cancelAuthorBtn" style="display: none;" onclick="cancel()">Отменить</button>
+    <button type="submit" id = "submitAuthor">Добавить</button>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/vendor/lovefield/dist/lovefield.min.js"></script>
+  <script src="author.js"></script>
+</body>
+</html>

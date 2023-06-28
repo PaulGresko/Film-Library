@@ -1,0 +1,17 @@
+{
+  "name": "lovefield-example",
+  "version": "1.0.0",
+  "description": "lovefield for students",
+  "scripts": {
+    "start": "lite-server -c ./bs-config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "lovefield": "^2.1.12"
+  }
+}

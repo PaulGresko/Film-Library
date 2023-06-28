@@ -1,0 +1,53 @@
+<!-- genre.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Фильмы</title>
+  <link rel="stylesheet" type="text/css" href="film.css">
+</head>
+<body> 
+  <li><a href="/">Начальная страница</a></li>
+  <h1>Фильмы</h1>
+
+  <table id="filmTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>ID жанра</th>
+        <th>Автор</th>
+        <th>Год</th>
+        <th>Цена</th>
+        <th>Действие</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <form id="filmForm">
+    <label for="genreIdInput">Genre ID:</label>
+    <select id="genreIdInput" required>
+        <!-- Опции для выбора из столбца "id" таблицы "genre" -->
+    </select>
+    <br>
+    <label for="authorInput">Author:</label>
+    <select id="authorInput" required>
+        <!-- Опции для выбора из столбца "name" таблицы "author" -->
+    </select>
+    <br>
+    <label for="yearInput">Year:</label>
+    <input type="number" id="yearInput" min="1000" max="9999" step="1" required>
+    <br>
+    <label for="priceInput">Price:</label>
+    <input type="number" id="priceInput" required>
+    <br>
+    <button type="button" id="updateFilmBtn" style="display: none;" onclick="update()">Изменить</button>
+    <button type="button" id="cancelFilmBtn" style="display: none;" onclick="cancel()">Отменить</button>
+    <button type="submit" id="submitFilm">Добавить</button>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/vendor/lovefield/dist/lovefield.min.js"></script>
+  <script src="film.js"></script>
+</body>
+</html>
